@@ -39,8 +39,7 @@
     "storybook-watcher": "sb-rn-watcher",
     "prepare": "is-ci || husky install",
     "types-commerce": "npx ts-node ./scripts/types-commerce.ts",
-    "check-translation-files": "npx ts-node ./scripts/check-translation-files.ts",
-    "ausweisapp2-fix-postinstall": "rm -rf node_modules/@sap/react-native-ausweisapp2-wrapper/ios/Frameworks/AusweisApp2-SDK-iOS/ && cd node_modules/@sap/react-native-ausweisapp2-wrapper && yarn postinstall && cd ../../.. && yarn podinstall"
+    "check-translation-files": "npx ts-node ./scripts/check-translation-files.ts"
   },
   "dependencies": {
     "@craftzdog/react-native-buffer": "^6.0.5",
@@ -56,7 +55,6 @@
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/stack": "^6.3.20",
     "@reduxjs/toolkit": "^1.9.7",
-    "@sap/react-native-ausweisapp2-wrapper": "1.1.9",
     "async-mutex": "^0.4.0",
     "axios": "^1.7.9",
     "firebase": "^11.4.0",
